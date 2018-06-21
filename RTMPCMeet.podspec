@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint RTMPCHybirdEngine.podspec' to ensure this is a
+#  Be sure to run `pod spec lint RTMPCMeet.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "RTMPCHybirdEngine"
+  s.name         = "RTMPCMeet"
   s.version      = "1.0.0"
-  s.summary      = "直播连麦、会议SDK,RTMPCHybirdEngine -iOS"
+  s.summary      = "直播连麦、会议SDK,RTMPCHybirdEngine -iOS混合库"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  　　　　　　　　　　　　RTMPCHybirdEngine 是anyRTC直播连麦的iOS SDK
+                    RTMPCHybirdEngine 是anyRTC直播连麦和会议的iOS SDK
                    DESC
 
   s.homepage     = "https://github.com/BoYuanZjq/RTMPCMeet"
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "８.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -90,11 +90,11 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+
   s.source_files  =  "RTMPCHybirdEngine/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
   s.public_header_files = "RTMPCHybirdEngine/**/*.{h}"
   s.vendored_frameworks  = "RTMPCHybirdEngine/**/*.framework"
-
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   s.frameworks =  'AVFoundation','AudioToolbox','VideoToolbox','CoreMedia','OpenGLES'
 
-  # s.library   = "libiconv"
+  # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
 
